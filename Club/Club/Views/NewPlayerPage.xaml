@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Club.NewPlayerPage">
+    <StackLayout Margin="10,10,10,0">
+
+        <Entry
+			Text="{Binding FirstName}"
+			Placeholder="First Name"/>
+        <Entry
+			Text="{Binding LastName}"
+			Placeholder="Last Name"/>
+        <Entry
+			Text="{Binding Team}"
+			Placeholder="Team"/>
+        <Entry
+			Text="{Binding Position}"
+			Placeholder="Position"/>
+        <Entry
+			Text="{Binding Cost}"
+			Placeholder="Cost" 
+			Keyboard="Numeric"/>
+        <Button 
+			Text="Add"
+			TextColor="White"
+			BackgroundColor="Green"
+			Command="{Binding AddCommand}"/>
+    </StackLayout>
+</ContentPage>

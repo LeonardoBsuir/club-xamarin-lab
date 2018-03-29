@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Club"
+             x:Class="Club.MainPage">
+
+    <StackLayout Padding="20">
+
+        <Button 
+			Text="View all players"
+			TextColor="White"
+			BackgroundColor="Green"
+			Command="{Binding PlayersBtnClicked}"/>
+
+        <Button 
+			Text="View all teams"
+			TextColor="White"
+			BackgroundColor="Green"
+			Command="{Binding TeamsBtnClicked}"/>
+    </StackLayout>
+
+</ContentPage>

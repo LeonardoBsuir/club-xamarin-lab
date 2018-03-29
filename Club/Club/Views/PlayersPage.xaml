@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Club.PlayersPage">
+
+
+    <StackLayout Padding="20">
+        <ListView ItemsSource="{Binding Records}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell TextColor="Black" Text="{Binding LastName}">
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button 
+			Text="Add player"
+			TextColor="White"
+			BackgroundColor="Green"
+			Command="{Binding NewPlayerBtnClicked}"/>
+    </StackLayout>
+</ContentPage>
