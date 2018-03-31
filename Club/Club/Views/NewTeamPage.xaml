@@ -1,32 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Club.NewTeamPage">
-    <StackLayout Margin="10,10,10,0">
-
-        <Entry
+             x:Class="Club.NewTeamPage"
+             Title="Add team">
+    <ScrollView>
+        <StackLayout Padding="20" Margin="10,10,10,10">
+            <Entry Margin="10,10,10,10"
 			Text="{Binding Name}"
 			Placeholder="Name"/>
-        <Entry
+            <Entry Margin="10,10,10,10"
 			Text="{Binding City}"
 			Placeholder="City"/>
-        <Entry
+            <Entry Margin="10,10,10,10"
 			Text="{Binding Country}"
 			Placeholder="Country"/>
-        <Entry
+            <Entry Margin="10,10,10,10"
 			Text="{Binding Stadium}"
 			Placeholder="Stadium"/>
-        <Entry
+            <Entry Margin="10,10,10,10"
 			Text="{Binding Coach}"
 			Placeholder="Coach"/>
-        <Entry
+            <Entry Margin="10,10,10,10"
+			Text="{Binding Sponsor}"
+			Placeholder="Sponsor"/>
+            <Entry Margin="10,10,10,10"
+			Text="{Binding FoundationYear}"
+			Placeholder="FoundationYear" 
+			Keyboard="Numeric"/>
+            <Entry Margin="10,10,10,10"
 			Text="{Binding Cost}"
 			Placeholder="Cost" 
 			Keyboard="Numeric"/>
-        <Button 
+            <Button Margin="10,10,10,10"
 			Text="Add"
 			TextColor="White"
 			BackgroundColor="Green"
 			Command="{Binding AddCommand}"/>
-    </StackLayout>
+        </StackLayout>
+    </ScrollView>
+    
 </ContentPage>

@@ -1,12 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Club.EditTeamPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             x:Class="Club.EditTeamPage"
+             Title="Edit team">
+    <ScrollView>
+        <StackLayout Padding="20" Margin="10,10,10,10">
+            <Entry Margin="5"
+			Text="{Binding CurrentTeam.Name}"
+			Placeholder="Name"/>
+            <Entry Margin="5"
+			Text="{Binding CurrentTeam.City}"
+			Placeholder="City"/>
+            <Entry Margin="5"
+			Text="{Binding CurrentTeam.Country}"
+			Placeholder="Country"/>
+            <Entry Margin="5"
+			Text="{Binding CurrentTeam.Stadium}"
+			Placeholder="Stadium"/>
+            <Entry Margin="5"
+			Text="{Binding CurrentTeam.Coach}"
+			Placeholder="Coach"/>
+            <Entry Margin="5"
+			Text="{Binding CurrentTeam.Sponsor}"
+			Placeholder="Sponsor"/>
+            <Entry Margin="5"
+			Text="{Binding CurrentTeam.FoundationYear}"
+			Placeholder="FoundationYear" 
+			Keyboard="Numeric"/>
+            <Entry Margin="5"
+			Text="{Binding CurrentTeam.Cost}"
+			Placeholder="Cost" 
+			Keyboard="Numeric"/>
+            <Button Margin="5"
+			Text="Update"
+			TextColor="White"
+			BackgroundColor="Green"
+			Command="{Binding EditCommand}"/>
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>

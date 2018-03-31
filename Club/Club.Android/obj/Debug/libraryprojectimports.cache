@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
-    <Jar>obj\Debug\lp\1\jl\formsviewgroup.jar</Jar>
-    <Jar>obj\Debug\lp\10\jl\support-annotations.jar</Jar>
     <Jar>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\1\jl\formsviewgroup.jar</Jar>
     <Jar>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\10\jl\support-annotations.jar</Jar>
     <Jar>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\11\jl\bin\classes.jar</Jar>
@@ -19,6 +17,10 @@
     <Jar>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\22\jl\bin\classes.jar</Jar>
     <Jar>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\23\jl\bin\classes.jar</Jar>
     <Jar>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\24\jl\bin\classes.jar</Jar>
+    <Jar>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\31\jl\classes.jar</Jar>
+    <Jar>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\32\jl\classes.jar</Jar>
+    <Jar>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\33\jl\classes.jar</Jar>
+    <Jar>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\34\jl\classes.jar</Jar>
     <Jar>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\9\jl\bin\classes.jar</Jar>
   </Jars>
   <ResolvedResourceDirectories>
@@ -34,6 +36,9 @@
     <ResolvedResourceDirectory>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\20\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\21\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\23\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\31\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\33\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\34\jl\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj\Debug\lp\3\jl\assets</ResolvedAssetDirectory>
@@ -57,5 +62,8 @@
     <ResolvedResourceDirectoryStamp>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\20.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\21.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\23.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\31.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\33.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Univer\Club\Club\Club.Android\obj\Debug\lp\34.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

@@ -1,12 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Club.TeamPage">
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="Club.TeamPage"
+             Title="Team details">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout VerticalOptions="StartAndExpand" Padding="30">
+                <StackLayout Padding="10" Margin="10,10,10,10">
+                    <Label Margin="5"
+                   TextColor="Black"
+                   Text="{Binding CurrentTeam.Name, StringFormat='Name: {0}'}"/>
+                    <Label Margin="5"
+                   TextColor="Black"
+                   Text="{Binding CurrentTeam.City, StringFormat='City: {0}'}"/>
+                    <Label Margin="5"
+                   TextColor="Black"                  
+                   Text="{Binding CurrentTeam.Country, StringFormat='Country: {0}'}"/>
+                    <Label Margin="5"
+                   TextColor="Black"
+                   Text="{Binding CurrentTeam.Stadium, StringFormat='Stadium: {0}'}"/>
+                    <Label Margin="5"
+                   TextColor="Black"
+                   Text="{Binding CurrentTeam.Coach, StringFormat='Coach: {0}'}"/>
+                    <Label Margin="5"
+                   TextColor="Black"
+                   Text="{Binding CurrentTeam.Sponsor, StringFormat='Sponsor: {0}'}"/>
+                    <Label Margin="5"
+                   TextColor="Black"
+                   Text="{Binding CurrentTeam.FoundationYear, StringFormat='FoundationYear: {0}'}"/>
+                    <Label Margin="5"
+                   TextColor="Black"
+                   Text="{Binding CurrentTeam.Cost, StringFormat='Cost: {0}'}"/>
+
+                    <Button Margin="5"
+			        Text="Edit"
+			        TextColor="White"
+			        BackgroundColor="Green"
+			        Command="{Binding EditCommand}"/>
+                </StackLayout>
+
+                <maps:Map WidthRequest="320" HeightRequest="200"
+                    x:Name="MyMap"
+                    IsShowingUser="true"
+                    MapType="Hybrid"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

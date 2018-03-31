@@ -1,13 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Club.TeamsPage">
-    <StackLayout Padding="20">
-        <ListView ItemsSource="{Binding Records}">
+             x:Class="Club.TeamsPage"
+             Title="All teams">
+    <StackLayout>
+        <ListView x:Name="TeamsList" 
+                  ItemsSource="{Binding Records}"
+                  HasUnevenRows="True"
+                  Margin="40, 80"
+                  ItemTapped="TeamsList_OnItemTapped"
+                  BackgroundColor="Silver">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell TextColor="Black" Text="{Binding Name}">
-                    </TextCell>
+                    <ViewCell>
+                        <StackLayout Padding="20">
+                            <Label TextColor="Black" Text="{Binding Name, StringFormat='Name: {0}'}"/>
+                            <StackLayout IsVisible="{Binding IsVisible}"
+                                     Orientation="Horizontal"
+                                     Margin="0,30,0,0">
+                                <Button Text="Details"
+                                    BackgroundColor="DarkGreen"
+                                    TextColor="White"
+                                    HeightRequest="50"
+                                    WidthRequest="85"
+                                    FontSize="12" 
+                                    Command="{Binding 
+                                        Path=BindingContext.ViewTeamBtnClicked, 
+                                        Source={x:Reference TeamsList}}"
+                                    CommandParameter="{Binding}"/>
+                                <Button Text="Edit"
+                                    BackgroundColor="DodgerBlue"
+                                    TextColor="White"
+                                    HeightRequest="50"
+                                    WidthRequest="85"
+                                    FontSize="12"
+                                    Command="{Binding 
+                                        Path=BindingContext.EditTeamBtnClicked, 
+                                        Source={x:Reference TeamsList}}"
+                                    CommandParameter="{Binding}"/>
+                                <Button Text="Delete"
+                                    BackgroundColor="DarkRed"
+                                    TextColor="White"
+                                    HeightRequest="50"
+                                    WidthRequest="85"
+                                    FontSize="12" 
+                                    Command="{Binding 
+                                        Path=BindingContext.RemoveTeamBtnClicked, 
+                                        Source={x:Reference TeamsList}}"
+                                    CommandParameter="{Binding}"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

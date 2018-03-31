@@ -12,7 +12,7 @@ namespace Club
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class TeamsPage : ContentPage
 	{
-        private BaseViewModel viewModel;
+        private TeamsViewModel viewModel;
         public TeamsPage ()
 		{
             InitializeComponent();
@@ -25,6 +25,12 @@ namespace Club
             base.OnAppearing();
             if (viewModel != null)
                 await viewModel.OnAppearing();
+        }
+
+        private void TeamsList_OnItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var team = e.Item as Team;
+            viewModel?.ShowOrHidePoducts(team);
         }
     }
 }

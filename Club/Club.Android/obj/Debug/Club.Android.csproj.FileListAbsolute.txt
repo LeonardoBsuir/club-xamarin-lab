@@ -19,6 +19,10 @@ D:\Univer\Club\Club\Club.Android\obj\Debug\res\layout\toolbar.xml
 D:\Univer\Club\Club\Club.Android\obj\Debug\res\values\styles.xml
 D:\Univer\Club\Club\Club.Android\obj\Debug\R.cs.flag
 D:\Univer\Club\Club\Club.Android\obj\Debug\uploadflags.txt
+D:\Univer\Club\Club\Club.Android\obj\Debug\XbdMerge\Xamarin.GooglePlayServices.Basement.dll
+D:\Univer\Club\Club\Club.Android\obj\Debug\XbdMerge\Xamarin.GooglePlayServices.Tasks.dll
+D:\Univer\Club\Club\Club.Android\obj\Debug\XbdMerge\Xamarin.GooglePlayServices.Base.dll
+D:\Univer\Club\Club\Club.Android\obj\Debug\XbdMerge\Xamarin.GooglePlayServices.Maps.dll
 D:\Univer\Club\Club\Club.Android\bin\Debug\Mono.Android.pdb
 D:\Univer\Club\Club\Club.Android\bin\Debug\mscorlib.pdb
 D:\Univer\Club\Club\Club.Android\bin\Debug\SQLite-net.pdb
@@ -94,6 +98,7 @@ D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Web.Services.pd
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Xml.Linq.pdb
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Xml.pdb
 D:\Univer\Club\Club\Club.Android\bin\Debug\Club.Android.dll
+D:\Univer\Club\Club\Club.Android\obj\Debug\linksrc\Club.pdb
 D:\Univer\Club\Club\Club.Android\obj\Debug\linksrc\Club.Android.dll.mdb
 D:\Univer\Club\Club\Club.Android\obj\Debug\linksrc\FormsViewGroup.dll.mdb
 D:\Univer\Club\Club\Club.Android\obj\Debug\linksrc\Xamarin.Forms.Core.dll.mdb

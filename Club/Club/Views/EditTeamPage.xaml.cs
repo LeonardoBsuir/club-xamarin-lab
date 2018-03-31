@@ -12,9 +12,10 @@ namespace Club
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class EditTeamPage : ContentPage
 	{
-		public EditTeamPage ()
+		public EditTeamPage (Team item)
 		{
 			InitializeComponent ();
-		}
+            BindingContext = new EditTeamViewModel(Navigation, item);
+        }
 	}
 }
