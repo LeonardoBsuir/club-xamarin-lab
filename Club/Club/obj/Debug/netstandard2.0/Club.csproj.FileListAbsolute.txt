@@ -14,4 +14,6 @@ D:\Univer\Club\Club\Club\obj\Debug\netstandard2.0\Club.pdb
 D:\Univer\Club\Club\Club\bin\Debug\netstandard2.0\Club.deps.json
 D:\Univer\Club\Club\Club\bin\Debug\netstandard2.0\Club.dll
 D:\Univer\Club\Club\Club\bin\Debug\netstandard2.0\Club.pdb
-D:\Univer\Club\Club\Club\obj\Debug\netstandard2.0\Club.csprojResolveAssemblyReference.cache
+D:\Univer\Club\Club\Club\bin\Debug\netstandard2.0\Club.dll.config
+D:\Univer\Club\Club\Club\obj\Debug\netstandard2.0\Club.csproj.App.config
+D:\Univer\Club\Club\Club\obj\Debug\netstandard2.0\Club.Views.WeatherPage.xaml.g.cs

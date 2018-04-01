@@ -18,6 +18,18 @@
 			TextColor="White"
 			BackgroundColor="Green"
 			Command="{Binding TeamsBtnClicked}"/>
+
+        <Button 
+			Text="Phone call"
+			TextColor="White"
+			BackgroundColor="Green"
+			Command="{Binding PhoneBtnClicked}"/>
+
+        <Button 
+			Text="View wheather"
+			TextColor="White"
+			BackgroundColor="Green"
+			Command="{Binding WheatherBtnClicked}"/>
     </StackLayout>
 
 </ContentPage>

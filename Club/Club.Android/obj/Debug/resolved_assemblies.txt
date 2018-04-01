@@ -4,6 +4,9 @@ D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\FormsViewGroup.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\Java.Interop.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\Mono.Android.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\mscorlib.dll
+D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\Newtonsoft.Json.dll
+D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\Plugin.Messaging.Abstractions.dll
+D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\Plugin.Messaging.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\SQLite-net.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\SQLitePCLRaw.batteries_green.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\SQLitePCLRaw.batteries_v2.dll
@@ -12,6 +15,9 @@ D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\SQLitePCLRaw.lib.e_sql
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\SQLitePCLRaw.provider.e_sqlite3.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Core.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.dll
+D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Net.Http.dll
+D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Net.Http.Extensions.dll
+D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Net.Http.Primitives.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Runtime.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Xml.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Xml.Linq.dll
@@ -52,7 +58,6 @@ D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Globalization.E
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.IO.Compression.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.IO.Compression.FileSystem.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.ComponentModel.Composition.dll
-D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Net.Http.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Runtime.InteropServices.RuntimeInformation.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Runtime.Serialization.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.ServiceModel.Internals.dll
@@ -77,6 +82,7 @@ D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Reflection.Prim
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Linq.Expressions.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Threading.Tasks.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Globalization.dll
+D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Net.Primitives.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.ObjectModel.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.IO.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Dynamic.Runtime.dll
