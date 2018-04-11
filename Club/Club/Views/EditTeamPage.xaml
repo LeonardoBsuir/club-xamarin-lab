@@ -20,9 +20,9 @@
             <Entry Margin="5"
 			Text="{Binding CurrentTeam.Coach}"
 			Placeholder="Coach"/>
-            <Entry Margin="5"
-			Text="{Binding CurrentTeam.Sponsor}"
-			Placeholder="Sponsor"/>
+            <DatePicker MinimumDate="4/11/2018"
+                        MaximumDate="4/11/2019"
+                        Date="{Binding CurrentTeam.MatchDate}"/>
             <Entry Margin="5"
 			Text="{Binding CurrentTeam.FoundationYear}"
 			Placeholder="FoundationYear" 

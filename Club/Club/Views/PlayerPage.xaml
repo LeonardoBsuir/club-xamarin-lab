@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Club.PlayerPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="StartAndExpand" Padding="30">
+                <StackLayout Padding="10" Margin="10,10,10,10">
+                    <Label Margin="5"
+                   TextColor="Black"
+                   Text="{Binding CurrentPlayer.LastName, StringFormat='LastName: {0}'}"/>
+                    <Label Margin="5"
+                   TextColor="Black"
+                   Text="{Binding CurrentPlayer.FirstName, StringFormat='FirstName: {0}'}"/>
+                    <Label Margin="5"
+                   TextColor="Black"                  
+                   Text="{Binding CurrentPlayer.Position, StringFormat='Position: {0}'}"/>
+                    <Label Margin="5"
+                   TextColor="Black"
+                   Text="{Binding CurrentPlayer.Cost, StringFormat='Cost: {0}'}"/>
+                    <Label Margin="5"
+                   TextColor="Black"
+                   Text="{Binding CurrentPlayer.PhoneNumber, StringFormat='PhoneNumber: {0}'}"/>
+                    <Button 
+			            Text="Call"
+			            TextColor="White"
+			            BackgroundColor="Green"
+			            Command="{Binding PhoneBtnClicked}"
+                        CommandParameter="{Binding CurrentPlayer}"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

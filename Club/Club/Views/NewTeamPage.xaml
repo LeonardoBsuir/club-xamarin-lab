@@ -20,9 +20,9 @@
             <Entry Margin="10,10,10,10"
 			Text="{Binding Coach}"
 			Placeholder="Coach"/>
-            <Entry Margin="10,10,10,10"
-			Text="{Binding Sponsor}"
-			Placeholder="Sponsor"/>
+            <DatePicker MinimumDate="4/11/2018"
+                        MaximumDate="4/11/2019"
+                        Date="{Binding MatchDate}"/>
             <Entry Margin="10,10,10,10"
 			Text="{Binding FoundationYear}"
 			Placeholder="FoundationYear" 

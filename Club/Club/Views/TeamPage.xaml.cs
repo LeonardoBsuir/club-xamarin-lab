@@ -13,13 +13,13 @@ namespace Club
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class TeamPage : ContentPage
 	{
+ 
         public TeamPage(Team item)
 		{
 			InitializeComponent ();
-            MyMap.MoveToRegion(
-                    MapSpan.FromCenterAndRadius(
-                    new Position(37, 33), Distance.FromMiles(1)));
+            
             BindingContext = new TeamViewModel(Navigation, item);
+            TeamViewModel.Map = MyMap;
         }
     }
 }

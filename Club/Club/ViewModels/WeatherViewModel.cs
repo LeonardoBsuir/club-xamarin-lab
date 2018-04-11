@@ -7,6 +7,16 @@ namespace Club
 {
     class WeatherViewModel : BaseViewModel
     {
+        public WeatherViewModel(Team team)
+        {
+            _city = team.City;
+            Task.Run(async () =>
+            {
+                await InitializeGetWeatherAsync();
+            });
+            RaisePropertyChanged();
+        }
+
         WeatherServices _weatherServices = new WeatherServices();
 
         private WeatherMainModel _weatherMainModel;  // for xaml binding

@@ -12,8 +12,8 @@
 			Text="{Binding LastName}"
 			Placeholder="Last Name"/>
         <Entry
-			Text="{Binding Team}"
-			Placeholder="Team"/>
+			Text="{Binding PhoneNumber}"
+			Placeholder="PhoneNumber"/>
         <Entry
 			Text="{Binding Position}"
 			Placeholder="Position"/>

@@ -21,6 +21,9 @@ D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Net.Http.Primit
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Runtime.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Xml.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\System.Xml.Linq.dll
+D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\Xamarin.Android.Arch.Core.Common.dll
+D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\Xamarin.Android.Arch.Lifecycle.Common.dll
+D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\Xamarin.Android.Arch.Lifecycle.Runtime.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\Xamarin.Android.Support.Annotations.dll
 D:\Univer\Club\Club\Club.Android\obj\Debug\android\assets\Xamarin.Android.Support.Compat.dll

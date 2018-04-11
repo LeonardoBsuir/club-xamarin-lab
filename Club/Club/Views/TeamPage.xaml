@@ -25,7 +25,7 @@
                    Text="{Binding CurrentTeam.Coach, StringFormat='Coach: {0}'}"/>
                     <Label Margin="5"
                    TextColor="Black"
-                   Text="{Binding CurrentTeam.Sponsor, StringFormat='Sponsor: {0}'}"/>
+                   Text="{Binding CurrentTeam.MatchDate, StringFormat='Date: {0:MM/dd/yyyy}'}"/>
                     <Label Margin="5"
                    TextColor="Black"
                    Text="{Binding CurrentTeam.FoundationYear, StringFormat='FoundationYear: {0}'}"/>
@@ -33,11 +33,12 @@
                    TextColor="Black"
                    Text="{Binding CurrentTeam.Cost, StringFormat='Cost: {0}'}"/>
 
-                    <Button Margin="5"
-			        Text="Edit"
-			        TextColor="White"
-			        BackgroundColor="Green"
-			        Command="{Binding EditCommand}"/>
+                    <Button 
+			            Text="View wheather"
+			            TextColor="White"
+			            BackgroundColor="Green"
+			            Command="{Binding WheatherBtnClicked}"
+                        CommandParameter="{Binding CurrentTeam}"/>
                 </StackLayout>
 
                 <maps:Map WidthRequest="320" HeightRequest="200"

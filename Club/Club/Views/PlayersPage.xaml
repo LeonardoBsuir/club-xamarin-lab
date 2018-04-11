@@ -5,25 +5,52 @@
              Title="All players">
 
 
-    <StackLayout Padding="20">
-        <ListView ItemsSource="{Binding Records}"
+    <StackLayout>
+        <ListView x:Name="PlayersList" 
+                  ItemsSource="{Binding Records}"
                   HasUnevenRows="True"
-                  RowHeight="80"
-                  Margin="10">
+                  Margin="40, 80"
+                  ItemTapped="PlayersList_OnItemTapped"
+                  BackgroundColor="Silver">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Vertical">
-                            <Grid HeightRequest="10"></Grid>
-                            <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" BackgroundColor="Aqua">
-                                <StackLayout Orientation="Vertical">
-                                    <Label TextColor="Black" Text="{Binding LastName, StringFormat='LastName: {0}'}" FontSize="16"/>
-                                    <Label TextColor="Black" Text="{Binding FirstName, StringFormat='FirstName: {0}'}" FontSize="16"/>
-                                </StackLayout>
-                                <Label TextColor="Black" 
-                                   Text="{Binding Team, StringFormat='Team: {0}'}" 
-                                   FontSize="24" 
-                                   HorizontalOptions="End"/>
+                        <StackLayout Padding="20">
+                            <Label TextColor="Black" Text="{Binding LastName, StringFormat='LastName: {0}'}"/>
+                            <Label TextColor="Black" Text="{Binding FirstName, StringFormat='FirstName: {0}'}"/>
+                            <StackLayout IsVisible="{Binding IsVisible}"
+                                     Orientation="Horizontal"
+                                     Margin="0,30,0,0">
+                                <Button Text="Details"
+                                    BackgroundColor="DarkGreen"
+                                    TextColor="White"
+                                    HeightRequest="50"
+                                    WidthRequest="85"
+                                    FontSize="12" 
+                                    Command="{Binding 
+                                        Path=BindingContext.ViewPlayerBtnClicked, 
+                                        Source={x:Reference PlayersList}}"
+                                    CommandParameter="{Binding}"/>
+                                <Button Text="Edit"
+                                    BackgroundColor="DodgerBlue"
+                                    TextColor="White"
+                                    HeightRequest="50"
+                                    WidthRequest="85"
+                                    FontSize="12"
+                                    Command="{Binding 
+                                        Path=BindingContext.EditPlayerBtnClicked, 
+                                        Source={x:Reference PlayersList}}"
+                                    CommandParameter="{Binding}"/>
+                                <Button Text="Delete"
+                                    BackgroundColor="DarkRed"
+                                    TextColor="White"
+                                    HeightRequest="50"
+                                    WidthRequest="85"
+                                    FontSize="12" 
+                                    Command="{Binding 
+                                        Path=BindingContext.RemovePlayerBtnClicked, 
+                                        Source={x:Reference PlayersList}}"
+                                    CommandParameter="{Binding}"/>
                             </StackLayout>
                         </StackLayout>
                     </ViewCell>

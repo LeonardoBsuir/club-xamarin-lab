@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Club.EditPlayerPage">
+    <StackLayout Margin="10,10,10,0">
+
+        <Entry
+			Text="{Binding CurrentPlayer.FirstName}"
+			Placeholder="First Name"/>
+        <Entry
+			Text="{Binding CurrentPlayer.LastName}"
+			Placeholder="Last Name"/>
+        <Entry
+			Text="{Binding CurrentPlayer.PhoneNumber}"
+			Placeholder="PhoneNumber"/>
+        <Entry
+			Text="{Binding CurrentPlayer.Position}"
+			Placeholder="Position"/>
+        <Entry
+			Text="{Binding CurrentPlayer.Cost}"
+			Placeholder="Cost" 
+			Keyboard="Numeric"/>
+        <Button 
+			Text="Update"
+			TextColor="White"
+			BackgroundColor="Green"
+			Command="{Binding EditCommand}"/>
+    </StackLayout>
+</ContentPage>

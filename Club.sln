@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Club.Android", "Club\Club.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Club.iOS", "Club\Club.iOS\Club.iOS.csproj", "{F8892A5B-1431-4C4C-B269-18C629B7BA14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Club", "Club\Club\Club.csproj", "{AB34BF1D-D803-4022-B99B-C6F219B7CD91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Club", "Club\Club\Club.csproj", "{AB34BF1D-D803-4022-B99B-C6F219B7CD91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,7 +71,8 @@ Global
 		{F8892A5B-1431-4C4C-B269-18C629B7BA14}.AppStore|iPhone.Build.0 = AppStore|iPhone
 		{F8892A5B-1431-4C4C-B269-18C629B7BA14}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
 		{F8892A5B-1431-4C4C-B269-18C629B7BA14}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
-		{F8892A5B-1431-4C4C-B269-18C629B7BA14}.Debug|Any CPU.ActiveCfg = Debug|iPhone
+		{F8892A5B-1431-4C4C-B269-18C629B7BA14}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{F8892A5B-1431-4C4C-B269-18C629B7BA14}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
 		{F8892A5B-1431-4C4C-B269-18C629B7BA14}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{F8892A5B-1431-4C4C-B269-18C629B7BA14}.Debug|iPhone.Build.0 = Debug|iPhone
 		{F8892A5B-1431-4C4C-B269-18C629B7BA14}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator

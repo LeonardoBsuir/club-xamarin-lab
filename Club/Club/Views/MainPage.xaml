@@ -14,22 +14,11 @@
 			Command="{Binding PlayersBtnClicked}"/>
 
         <Button 
-			Text="View all teams"
+			Text="View all matches"
 			TextColor="White"
 			BackgroundColor="Green"
 			Command="{Binding TeamsBtnClicked}"/>
 
-        <Button 
-			Text="Phone call"
-			TextColor="White"
-			BackgroundColor="Green"
-			Command="{Binding PhoneBtnClicked}"/>
-
-        <Button 
-			Text="View wheather"
-			TextColor="White"
-			BackgroundColor="Green"
-			Command="{Binding WheatherBtnClicked}"/>
     </StackLayout>
 
 </ContentPage>

@@ -15,7 +15,7 @@ namespace Club
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Position { get; set; }
-        public string Team { get; set; }
+        public string PhoneNumber { get; set; }
         public string Cost { get; set; }
         public ICommand AddCommand { get; set; }
         public INavigation Navigation { get; set; }
@@ -37,7 +37,7 @@ namespace Club
                     FirstName = FirstName,
                     LastName = LastName,
                     Position = Position,
-                    Team = Team,
+                    PhoneNumber = PhoneNumber,
                     Cost = cost
 
                 };
@@ -51,11 +51,11 @@ namespace Club
             FirstName = string.Empty;
             LastName = string.Empty;
             Position = string.Empty;
-            Team = string.Empty;
+            PhoneNumber = string.Empty;
             Cost = string.Empty;
             RaisePropertyChanged(nameof(FirstName));
             RaisePropertyChanged(nameof(LastName));
-            RaisePropertyChanged(nameof(Team));
+            RaisePropertyChanged(nameof(PhoneNumber));
             RaisePropertyChanged(nameof(Position));
             RaisePropertyChanged(nameof(Cost));
         }

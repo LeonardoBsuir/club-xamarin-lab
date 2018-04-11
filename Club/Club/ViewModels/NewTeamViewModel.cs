@@ -14,17 +14,21 @@ namespace Club
         public string Country { get; set; }
         public string Stadium { get; set; }
         public string Coach { get; set; }
-        public string Sponsor { get; set; }
+        public DateTime MatchDate { get; set; }
         public string FoundationYear { get; set; }
         public string Cost { get; set; }
         public ICommand AddCommand { get; set; }
         public INavigation Navigation { get; set; }
 
+        private DateTime _startDate = DateTime.Now;
+ 
         public NewTeamViewModel(INavigation navigation)
         {
             this.Navigation = navigation;
             AddCommand = new Command(Add);
             database = new Database("Club");
+            MatchDate = _startDate;
+            ClearForm();
         }
 
         void Add()
@@ -40,7 +44,7 @@ namespace Club
                     Country = Country,
                     Coach = Coach,
                     Stadium = Stadium,
-                    Sponsor = Sponsor,
+                    MatchDate = MatchDate,
                     FoundationYear = foundation,
                     Cost = cost
 
@@ -57,7 +61,7 @@ namespace Club
             Country = string.Empty;
             Coach = string.Empty;
             Stadium = string.Empty;
-            Sponsor = string.Empty;
+            MatchDate = DateTime.Now;
             FoundationYear = string.Empty;
             Cost = string.Empty;
             RaisePropertyChanged(nameof(Name));
@@ -65,7 +69,7 @@ namespace Club
             RaisePropertyChanged(nameof(Country));
             RaisePropertyChanged(nameof(Coach));
             RaisePropertyChanged(nameof(Stadium));
-            RaisePropertyChanged(nameof(Sponsor));
+            RaisePropertyChanged(nameof(MatchDate));
             RaisePropertyChanged(nameof(FoundationYear));
             RaisePropertyChanged(nameof(Cost));
         }

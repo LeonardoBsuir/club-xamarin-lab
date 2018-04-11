@@ -12,10 +12,10 @@ namespace Club
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class WeatherPage : ContentPage
 	{
-		public WeatherPage ()
+		public WeatherPage (Team item)
 		{
 			InitializeComponent ();
-            BindingContext = new WeatherViewModel();
+            BindingContext = new WeatherViewModel(item);
 		}
 	}
 }

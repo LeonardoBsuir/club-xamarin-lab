@@ -8,7 +8,7 @@ namespace Club
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PlayersPage : ContentPage
     {
-        private BaseViewModel viewModel;
+        private PlayersViewModel viewModel;
         public PlayersPage()
         {
             InitializeComponent();
@@ -21,6 +21,12 @@ namespace Club
             base.OnAppearing();
             if (viewModel != null)
                 await viewModel.OnAppearing();
+        }
+
+        private void PlayersList_OnItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var player = e.Item as Player;
+            viewModel?.ShowOrHidePoducts(player);
         }
     }
 }
